@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: rgb(108, 170, 15);
+    height: 80px;
+}
+
+.titulo{
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    color: rgb(233, 233, 233);
+}
+
+img{
+    margin-top: 5px;
+}
+
+ul{
+    color: rgb(233, 233, 233);
+    display: inline-flex;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 23px;
+    list-style: none;
+}
+
+li{
+    margin: 10px 20px;
+    display: block;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+}
+
+li:hover{
+    text-decoration: underline;
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+a:visited{
+    color: white;
+}
+
+.container{
+    width: 960px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    overflow: hidden;
+    
+}
+
+.box-container{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/Site_agrnho_imagens.webp);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container:hover .box-container{
+    transform: scale(1.1);
+    filter: blur(1px);
+    overflow: visible;
+}
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: green;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: green;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+}
