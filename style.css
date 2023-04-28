@@ -155,7 +155,7 @@ section.slider{
 .pos-slide{
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 4.6rem;
+    margin-top: 115px;
     margin-bottom: 2rem;
     margin-left: 3rem;
 }
@@ -262,11 +262,16 @@ p{
     }
 
     .pos-slide{
-        margin-top: -12px;
+        margin-top: 60px;
     }
 
     .cards{
         margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cards:last-child{
+        margin-bottom: 0px;
     }
 }
 
