@@ -4,6 +4,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    margin-bottom: 23px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -150,6 +151,68 @@ section.slider{
 
 #radio3:checked ~ .primeiro{
     margin-left: -50%;
+}
+
+.pos-slide{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 4.6rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+p{
+    margin: 3rem;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+    text-align: center;
+    width: 330px;
+    height: 400px;
+    max-width: 480px;
+    background-color: antiquewhite;
+    margin-left: 32px;
+    border-radius: 15px;
+    border: 1px solid greenyellow;
+    box-shadow: 0px 0px 6px black;
+    position: relative;
+}
+
+.card-img{
+    width: 100%;
+    height: 130px;
+    background-color: #000000;
+    border-radius: 15px 15px 0px 0px;
+}
+
+p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.nav-cards{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 70px;
+    color: black;
+    background-color: yellowgreen;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.nav-cards:hover{
+    cursor: pointer;
+    border: 1px solid yellowgreen;
+    background-color: black;
+    color: yellowgreen;
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 999px) {
