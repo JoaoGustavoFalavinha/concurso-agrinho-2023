@@ -261,4 +261,8 @@ p{
     .nav-auto, .nav-manual{
         margin-top: 60%;
     }
+
+    .cards{
+        margin-left: 0px;
+    }
 }
