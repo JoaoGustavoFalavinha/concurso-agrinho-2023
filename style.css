@@ -262,6 +262,10 @@ p{
         margin-top: 60%;
     }
 
+    .pos-slide{
+        margin-top: -12px;
+    }
+
     .cards{
         margin-left: 0px;
     }
