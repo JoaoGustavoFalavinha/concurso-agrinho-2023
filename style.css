@@ -143,6 +143,7 @@ section.slider{
 p{
     margin: 3rem;
     margin-bottom: 0px;
+    text-align: justify;
 }
 
 /* CARDS */
@@ -289,6 +290,10 @@ footer{
     .pos-slide{
         font-size: 25px;
         margin-top: 60px;
+    }
+
+    p{
+        font-size: 25px;
     }
 
     .cards{
