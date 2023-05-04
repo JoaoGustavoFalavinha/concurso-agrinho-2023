@@ -114,7 +114,7 @@ section.slider{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 29.5%;
+    margin-top: 28.5%;
     display: flex;
     justify-content: center;
 }
@@ -162,69 +162,102 @@ section.slider{
 
 p{
     margin: 3rem;
+    margin-bottom: 0px;
 }
+
+/* CARDS */
 
 .container-cards{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cards{
+    width: 250px;
+    height: 350px;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 330px;
-    height: 400px;
-    max-width: 480px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 32px;
-    border-radius: 15px;
-    border: 1px solid greenyellow;
-    box-shadow: 0px 0px 6px black;
+    margin-top: 80px;
 }
 
-.card-img{
-    width: 100%;
-    height: 130px;
-    border-radius: 15px 15px 0px 0px;
-    margin-top: 57.6%;
-}
-
-p{
-    text-align: justify;
-    margin-top: 10px;
-}
-
-.nav-cards{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 70px;
-    color: black;
-    background-color: yellowgreen;
-    border-radius: 7px;
-    transition: 0.3s;
-}
-
-.nav-cards:hover{
+.card{
+    width: 250px;
+    height: 350px;
     cursor: pointer;
-    border: 1px solid yellowgreen;
-    background-color: black;
-    color: yellowgreen;
-    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px black;
+    border-radius: 8px 8px 0px 0px;
 }
+
+.nav-card{
+    background-color: #48e024;
+    padding: 10px 0px;
+    box-shadow: 0px 1px 8px black;
+    cursor: pointer;
+    border-radius: 0px 0px 8px 8px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.nav-link-card{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.box-card1, .box-card2, .box-card3{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: .6s;
+}
+
+.box-card1{
+    background-image: url(https://th.bing.com/th/id/OIP.I4UAeiyFl276i_QbDVpnVgHaFj?pid=ImgDet&rs=1);
+}
+
+.box-card2{
+    background-image: url(https://media.discordapp.net/attachments/1091488388592455721/1101294267344900138/ci-20200714082226-jinja.jpg?width=1200&height=400);
+}
+
+.box-card3{
+    background-image: url(https://cdn.discordapp.com/attachments/1091488388592455721/1101294267051282462/ci-20200508185917-eq6.jpg);
+}
+
+.cards:hover .box-card1{
+    transform: scale(1.1);
+    filter: blur(1px);
+}
+
+.cards:hover .box-card2{
+    transform: scale(1.1);
+    filter: blur(1px);
+}
+
+.cards:hover .box-card3{
+    transform: scale(1.1);
+    filter: blur(1px);
+}
+
+.cards:last-child{
+    margin-right: 0px;
+}
+
+/*FINAL CARDS*/
 
 footer{
     height: 120px;
     background-color: black;
+    margin-top: 50px;
 }
 
-.teste{
-    width: 330px;
-    height: 80px;
-    background-image: linear-gradient(360deg, gray, white);
-    border-radius: 0px 0px 15px 15px;
-}
+/*Responsividade*/
 
 @media screen and (max-width: 999px) {
     .nav-bar{
@@ -270,25 +303,30 @@ footer{
     }
 
     .nav-auto, .nav-manual{
-        margin-top: 60%;
+        margin-top: 51%;
     }
 
     .pos-slide{
+        font-size: 25px;
         margin-top: 60px;
     }
 
     .cards{
-        margin-left: 20px;
-        margin-bottom: 20px;
+        justify-content: space-between;
     }
 
-    .cards:last-child{
-        margin-bottom: 0px;
+    .cards:not(:last-child, :first-child){
+        margin-right: 0px;
     }
+
 }
 
-@media screen and (max-width: 705px) {
-    .cards{
-        margin-left: 0px;
+@media screen and (max-width: 500px){
+    .cards:first-child{
+        margin: 0px;
+    }
+
+    p{
+        margin-bottom: 40px;
     }
 }
