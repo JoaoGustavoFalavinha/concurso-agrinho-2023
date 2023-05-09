@@ -206,15 +206,19 @@ p{
 }
 
 .box-card1{
-    background-image: url(https://th.bing.com/th/id/OIP.I4UAeiyFl276i_QbDVpnVgHaFj?pid=ImgDet&rs=1);
+    background-image: url(assets/img/cards/card-1.png);
 }
 
 .box-card2{
-    background-image: url(https://media.discordapp.net/attachments/1091488388592455721/1101294267344900138/ci-20200714082226-jinja.jpg?width=1200&height=400);
+    background-image: url(assets/img/cards/card-2.png);
 }
 
 .box-card3{
-    background-image: url(https://cdn.discordapp.com/attachments/1091488388592455721/1101294267051282462/ci-20200508185917-eq6.jpg);
+    background-image: url(assets/img/cards/card-3.png);
+}
+
+.box-card4{
+    background-image: url(assets/img/cards/card-4.png);
 }
 
 .cards:hover .box-card1{
@@ -228,6 +232,11 @@ p{
 }
 
 .cards:hover .box-card3{
+    transform: scale(1.1);
+    filter: blur(1px);
+}
+
+.cards:hover .box-card4{
     transform: scale(1.1);
     filter: blur(1px);
 }
@@ -247,6 +256,10 @@ footer{
 /*Responsividade*/
 
 @media screen and (max-width: 999px) {
+    .logo h1{
+        font-size: 26px;
+    }
+
     .nav-bar{
         padding: 1.5rem 4rem;
     }
