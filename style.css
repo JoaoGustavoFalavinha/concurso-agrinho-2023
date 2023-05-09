@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 *{
     padding: 0px;
@@ -10,14 +11,14 @@
 /* CABEÇALHO/MENU */
 
 header{
-    background-color: #24252a;
+    background-color: #222129;
     box-shadow: 0px 3px 10px #464646;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    padding: 1rem 3rem;
 }
 
 .logo .nav-list{
@@ -26,7 +27,9 @@ header{
 }
 
 .logo h1{
+    font-family: 'Courgette', cursive;
     color: #fff;
+    font-size: 32px;
 }
 
 .nav-list{
@@ -48,7 +51,7 @@ header{
     text-decoration: none;
     font-size: 1.15rem;
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .mobile-menu-icon, .mobile-menu{
@@ -92,7 +95,7 @@ section.slider{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 28.5%;
+    margin-top: 31%;
     display: flex;
     justify-content: center;
 }
@@ -114,7 +117,7 @@ section.slider{
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2,
-#radio3:checked ~ .nav-auto .auto-btn3{
+#radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
     background-color: rgba(255, 255, 255, 0.678);
 }
 
@@ -128,6 +131,10 @@ section.slider{
 
 #radio3:checked ~ .primeiro{
     margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
 }
 
 /* FINAL SLIDES*/
@@ -149,16 +156,16 @@ p{
 /* CARDS */
 
 .container-cards{
+    margin: 0rem 3rem 6rem 3rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .cards{
     width: 280px;
     height: 350px;
-    margin-right: 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -181,7 +188,6 @@ p{
     cursor: pointer;
     border-radius: 0px 0px 8px 8px;
     display: block;
-    margin-bottom: 30px;
 }
 
 .nav-link-card{
@@ -191,7 +197,7 @@ p{
     font-size: 17px;
 }
 
-.box-card1, .box-card2, .box-card3{
+.box-card1, .box-card2, .box-card3, .box-card4{
     width: 100%;
     height: 100%;
     background-position: center;
@@ -294,24 +300,5 @@ footer{
 
     p{
         font-size: 14px;
-    }
-
-    .cards{
-        justify-content: space-between;
-    }
-
-    .cards:not(:last-child, :first-child){
-        margin-right: 0px;
-    }
-
-}
-
-@media screen and (max-width: 500px){
-    .cards:first-child{
-        margin: 0px;
-    }
-
-    p{
-        margin-bottom: 40px;
     }
 }
