@@ -15,6 +15,20 @@ header{
     box-shadow: 0px 3px 10px #464646;
 }
 
+.a-h1{
+    text-decoration: none;
+    color: white;
+}
+
+.a-h1:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.a-h1:hover{
+    cursor: pointer;
+}
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -182,7 +196,7 @@ p{
 }
 
 .nav-card{
-    background-color: #48e024;
+    background-color: #31303a;
     padding: 10px 0px;
     box-shadow: 0px 1px 8px black;
     cursor: pointer;
@@ -192,7 +206,7 @@ p{
 
 .nav-link-card{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 17px;
 }
