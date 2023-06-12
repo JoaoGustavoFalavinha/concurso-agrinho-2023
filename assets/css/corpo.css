@@ -18,5 +18,15 @@ p{
     font-weight: 400;
     margin-bottom: 50px;
     text-align: justify;
+}
 
+@media screen and (max-width: 900px) {
+
+    .a-h1{
+        font-size: 20px;
+    }
+
+    .h1-corpo{
+        font-size: 23px;
+    }
 }
